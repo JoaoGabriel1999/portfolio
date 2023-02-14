@@ -28,5 +28,8 @@
     .imagem {
         padding-top: 4.5rem;
     }
-    
+    .menu-btn {
+        position: absolute;
+        right: 5px;
+        top: 20px;
 }

@@ -112,7 +112,7 @@ body {
 .wrapper{
     position: fixed;
     top: 0;
-    left: 0;
+    left: 15px;
     height: 100%;
     width: 100%;
     background: rgb(32, 32, 32);
