@@ -118,12 +118,12 @@ body {
     background: rgb(32, 32, 32);
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
-    visibility: hidden;
+    display: none;
 }
 
 #active:checked ~ .wrapper {
     clip-path: circle(75%);
-    visibility: visible;
+    display: block;
 }
 
 .menu-btn {
