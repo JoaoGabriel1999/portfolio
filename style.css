@@ -128,8 +128,8 @@ body {
 
 .menu-btn {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 20px;
     z-index: 2;
     text-align: center;
     line-height: 50px;
