@@ -163,7 +163,7 @@ body {
 }
 
 #active:disabled ~ .wrapper {
-    display: hidden;
+    visibility: hidden;
 }
 
 .wrapper ul{
