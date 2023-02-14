@@ -28,17 +28,5 @@
     .imagem {
         padding-top: 4.5rem;
     }
-
-    .wrapper{
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: rgb(32, 32, 32);
-        clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.3s ease-in-out;
-        visibility: hidden;
-    }
     
 }
