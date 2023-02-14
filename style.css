@@ -162,6 +162,10 @@ body {
     content:  "\f00d";
 }
 
+#active:disabled ~ .wrapper {
+    display: hidden;
+}
+
 .wrapper ul{
     position: absolute;
     top: 50%;
