@@ -41,9 +41,13 @@
         visibility: hidden;
     }
     .menu-btn {
-        position: fixed;
-        top: 0;
-        left: 0;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        display: flex;
+        justify-content: flex-end;
+
         z-index: 2;
         text-align: center;
         line-height: 50px;
