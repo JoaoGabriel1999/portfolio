@@ -129,7 +129,7 @@ body {
 
 .menu-btn {
     position: absolute;
-    right: 5px;
+    right: 20px;
     top: 20px;
     z-index: 2;
     text-align: center;
