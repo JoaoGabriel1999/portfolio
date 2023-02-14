@@ -2,10 +2,6 @@
 
 @media screen and (max-width: 768px) {
 
-    body {
-        background-color: antiquewhite;
-    }
-
     .header {
         font-size: 0.6rem;
     }
@@ -34,6 +30,6 @@
     }
     .menu-btn {
         position: absolute;
-        right: 5px;
+        right: -2px;
         top: 20px; }
     }
