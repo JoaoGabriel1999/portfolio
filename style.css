@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
 }
 
 body {
@@ -160,10 +159,6 @@ body {
 
 #active:checked ~ .menu-btn i:before {
     content:  "\f00d";
-}
-
-#active:disabled ~ .wrapper {
-    visibility: hidden;
 }
 
 .wrapper ul{
