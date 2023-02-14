@@ -42,12 +42,8 @@
     }
     .menu-btn {
         position: absolute;
-        right: 20px;
+        right: 2px;
         top: 20px;
-
-        display: flex;
-        justify-content: flex-start;
-
         z-index: 2;
         text-align: center;
         line-height: 50px;
