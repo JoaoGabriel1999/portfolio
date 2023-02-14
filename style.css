@@ -118,7 +118,7 @@ body {
     background: rgb(32, 32, 32);
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
-    
+
 }
 
 #active:checked ~ .wrapper {
@@ -160,6 +160,10 @@ body {
 
 #active:checked ~ .menu-btn i:before {
     content:  "\f00d";
+}
+
+#active:disabled ~ .wrapper {
+    display: none;
 }
 
 .wrapper ul{
