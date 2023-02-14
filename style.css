@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+.header img {
+    height: 20em;
+    z-index: -3;
+}
+/*Animação*/
+
+@keyframes desenhoAnimacao {
+    from {
+        top: -15px;
+    }
+    to {
+        top: 25px;
+    }
+}
+
+.imagem2 {
+    position: relative;
+    animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
+} 
+
+/* Título */
+
+.header {
+        display: grid;
+        align-items: center; 
+        grid-template-columns: 65% 1fr 1fr;
+        column-gap: 1px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #15f4ee;
+}
+
+.container p {
+    text-transform: none;
+}
+
+.title {
+    display: inline-block;
+    border-right: 3px solid white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent}
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+/* midias sociais */
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-media  a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #28f1eb;
+    padding: 1rem 4rem;
+    border: 2px solid #3528f1;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    border-radius: 20px;
+}
+
+.social-media > a+a {
+    margin-left: 10px;
+    border: 2px solid rgb(90, 3, 90);
+  }
+
+.social-media > a:hover {
+    background-color: #292929;
+}
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(32, 32, 32);
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked ~ .wrapper {
+    clip-path: circle(75%);
+}
+
+.menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    background: #000000;
+    transition: all 0.3s ease;
+    border: 0px;
+}
+
+#active:checked ~ .menu-btn {
+        background: #F4E9CD;
+        color: #000000;
+}
+
+#active:checked  ~ h1 {
+    visibility:hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+#active:checked  ~ h2 {
+    visibility:hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+#active:checked ~ .menu-btn i:before {
+    content:  "\f00d";
+}
+
+.wrapper ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+
+.wrapper ul li {
+    margin: 15px 0;
+}
+
+.wrapper ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 50px;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+.wrapper ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index:-1 ;
+    transition: transform 0.3s ease;
+}
+
+.wrapper ul li a:hover:after {
+    transform: scaleY(1);
+}
+
+.wrapper ul li a:hover {
+    color: black;
+}
+
+input {
+    display: none;
+}
