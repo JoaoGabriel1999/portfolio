@@ -20,12 +20,25 @@
         justify-content: center;
         align-items: flex-start;
         box-sizing: border-box;
-        padding: 0 50px;
+        padding: 0 100px;
         font-size: 1.5em;
         text-transform: uppercase;
     }
 
     .imagem {
         padding-top: 4.5rem;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 55vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+  .social-media >  a+a {
+        padding: 1rem 4.4rem;
     }
 }
