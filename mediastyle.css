@@ -4,13 +4,14 @@
 
     .header {
         font-size: 0.6rem;
-    }
-
-    .header {
         display: flex;
         align-items: center; 
         flex-direction: column-reverse;
 }
+
+    h2 {
+        width: 100vw;
+    }
 
     .container {
         height: 40vh;
