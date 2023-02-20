@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
 
     .header {
         font-size: 0.6rem;
