@@ -211,3 +211,26 @@ body {
 input {
     display: none;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -2;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background-color: rgb(34, 34, 34);
+    color: #F4E9CD;
+    text-decoration: none;
+    width: 100vw;
+}
