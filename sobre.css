@@ -19,6 +19,7 @@ body {
     border: .1rem solid #28f1eb;
     height: 15rem;
     width: 40rem;
+    z-index: -2;
    
 }
 

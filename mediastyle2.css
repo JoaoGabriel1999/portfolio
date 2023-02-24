@@ -35,9 +35,10 @@
     }
 
     .social-media {
+        padding-top: 1.5rem;
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 2rem;
         width: 55vw;
         justify-content: center;
         align-items: center;
