@@ -10,7 +10,9 @@
 }
 
 body {
-    background-color: #000000;
+    background-image: url(imagens/code-code-editor-coding-computer-data-developing-1366450-pxhere.com.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
 }
 
 .header img {
@@ -53,7 +55,9 @@ body {
     padding: 0 112px;
     font-size: 1.5em;
     text-transform: uppercase;
-    color: #15f4ee;
+    color: #28f1eb;    
+    backdrop-filter: blur(3px);
+    z-index: -3;
 }
 
 .container p {
@@ -98,6 +102,7 @@ body {
     justify-content: center;
     transition: .5s ease-in-out;
     border-radius: 20px;
+    z-index: -2;
 }
 
 .social-media > a+a {
